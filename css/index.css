@@ -7,6 +7,10 @@ nav{
     display: flex;
     flex-direction: row;
 }
+.nav-item:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .nav-items h5{
     margin:5px 10px;
     margin: 15px 35px;
@@ -19,9 +23,15 @@ nav{
     width: 245px;
     margin-right: -60px;
 }
+[src="./images/actions.svg"]:hover{
+    cursor: pointer;
+}
 [src="./images/logo.svg"]{
     margin-top: 13px;
     margin-left: 10px;
+}
+[src="./images/logo.svg"]:hover{
+    cursor: pointer;
 }
 .active-item{
     color:#E21717;
@@ -77,6 +87,12 @@ nav{
     font-weight: bold;
     border:none
    
+}
+.action-btn:hover{
+    cursor: pointer;
+    color:black ;
+    background-color: white;
+    border: 1px solid black;
 }
 .intro-section{
     display: flex;
@@ -150,3 +166,57 @@ nav{
     border-radius: 50%;
     margin-top: -13px;
   }
+
+  /* media query */
+
+
+  @media (max-width:1100px){
+    .nav-items{
+        display: none;
+        
+    }
+    img[src="./images/actions.svg"]{
+        display: none;
+    }
+    img[src="./images/logo.svg"]{
+        margin: 0 auto;
+    }
+    .left-section h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .left-section h3{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sub-headlines{
+     margin-top: 20px;
+     margin-left: 100px;
+    }
+    .action-btns{
+        margin-left: 100px;
+        align-items: center;
+    }
+    .text{
+        text-align: center;
+    }
+  }
+  @media (max-width:1150px) {
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .right-section{
+        margin-top: 25px;
+    }
+
+  }
+  @media (max-width:768px){
+    .text{
+        width: 400px;
+    }
+    .left-section h1{
+        font-size: 50px;
+    }
+}
