@@ -1,4 +1,4 @@
-# My seventh Project
+# Product Home Page
 
 > i have learnt basics of HTML and CSS in this project.
 
